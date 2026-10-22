@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ブログ｜鉱物ノート</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sapphire:#123a8c;
+  --sapphire-deep:#0b2260;
+  --sapphire-light:#dce8fa;
+  --white:#ffffff;
+  --mist:#f4f8fd;
+  --ruby:#b4123c;
+  --ink:#14213d;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",sans-serif;
+  color:var(--ink);background:var(--mist);line-height:1.85;
+}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ruby);outline-offset:3px}
+h1,h2{font-family:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;line-height:1.4}
+
+header{background:var(--sapphire-deep);color:var(--white);border-bottom:4px solid var(--ruby)}
+.bar{
+  max-width:1040px;margin:0 auto;padding:14px 24px;
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 24px;
+}
+.logo{font-family:"Shippori Mincho",serif;font-weight:700;font-size:1.35rem;text-decoration:none;letter-spacing:.08em}
+nav ul{list-style:none;display:flex;gap:4px;flex-wrap:wrap}
+nav a{display:block;padding:6px 14px;text-decoration:none;font-size:.95rem;border-bottom:2px solid transparent}
+nav a:hover,nav a[aria-current="page"]{border-bottom-color:var(--white)}
+
+.title{background:var(--sapphire);color:var(--white)}
+.title-in{max-width:1040px;margin:0 auto;padding:40px 24px}
+.title h1{font-size:clamp(1.7rem,4vw,2.3rem)}
+.title p{margin-top:8px;color:var(--sapphire-light)}
+
+/* タイムライン */
+.feed{
+  max-width:640px;margin:32px auto 64px;padding:0 16px;
+}
+.feed ol{list-style:none;background:var(--white);border:1px solid var(--sapphire-light)}
+.post{padding:20px 24px;border-bottom:1px solid var(--sapphire-light)}
+.post:last-child{border-bottom:none}
+.post time{display:block;font-size:.85rem;font-weight:700;color:var(--ruby);letter-spacing:.04em}
+.post p{margin-top:6px;white-space:pre-line}
+
+footer{background:var(--sapphire-deep);color:var(--sapphire-light);text-align:center;padding:28px 24px;font-size:.88rem;border-top:4px solid var(--ruby)}
+
+@media(max-width:760px){
+  .post{padding:16px 18px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a class="logo" href="index.html">鉱物ノート</a>
+    <nav aria-label="メインメニュー">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="blog.html" aria-current="page">ブログ</a></li>
+        <li><a href="gallery.html">ギャラリー</a></li>
+        <li><a href="about.html">このサイトについて</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="title">
+  <div class="title-in">
+    <h1>ブログ</h1>
+    <p>鉱物の勉強の進み具合を、短く記録しています。</p>
+  </div>
+</div>
+
+<main class="feed">
+  <ol>
+    <li class="post">
+      <time datetime="2026-10-18">2026.10.18</time>
+      <p>サイトを作りはじめた。まずは宝石・鉄・黄金の3つから勉強していく。</p>
+    </li>
+    <li class="post">
+      <time datetime="2026-10-17">2026.10.17</time>
+      <p>サファイアとルビーは同じコランダムという鉱物だと知って驚いた。赤いものだけがルビーと呼ばれるらしい。</p>
+    </li>
+    <li class="post">
+      <time datetime="2026-10-16">2026.10.16</time>
+      <p>モース硬度を調べた。コランダムは9で、ダイヤモンドの10の次。金は2.5〜3でとてもやわらかい。</p>
+    </li>
+    <li class="post">
+      <time datetime="2026-10-15">2026.10.15</time>
+      <p>赤鉄鉱と磁鉄鉱のちがいをノートにまとめた。赤鉄鉱は赤っぽく、磁鉄鉱は黒くて磁石につく。</p>
+    </li>
+  </ol>
+</main>
+
+<footer>
+  <p>&copy; 2026 鉱物ノート</p>
+</footer>
+
+</body>
+</html>
